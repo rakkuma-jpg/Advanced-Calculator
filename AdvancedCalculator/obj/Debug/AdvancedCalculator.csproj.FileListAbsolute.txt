@@ -1,0 +1,14 @@
+C:\Users\Thickpad404\Downloads\Calculator\AdvancedCalculator\bin\Debug\AdvancedCalculator.exe.config
+C:\Users\Thickpad404\Downloads\Calculator\AdvancedCalculator\bin\Debug\AdvancedCalculator.exe
+C:\Users\Thickpad404\Downloads\Calculator\AdvancedCalculator\bin\Debug\AdvancedCalculator.pdb
+C:\Users\Thickpad404\Downloads\Calculator\AdvancedCalculator\obj\Debug\AdvancedCalculator.csproj.AssemblyReference.cache
+C:\Users\Thickpad404\Downloads\Calculator\AdvancedCalculator\obj\Debug\AdvancedCalculator.Properties.Resources.resources
+C:\Users\Thickpad404\Downloads\Calculator\AdvancedCalculator\obj\Debug\AdvancedCalculator.csproj.GenerateResource.cache
+C:\Users\Thickpad404\Downloads\Calculator\AdvancedCalculator\obj\Debug\AdvancedCalculator.csproj.CoreCompileInputs.cache
+C:\Users\Thickpad404\Downloads\Calculator\AdvancedCalculator\obj\Debug\AdvancedCalculator.exe
+C:\Users\Thickpad404\Downloads\Calculator\AdvancedCalculator\obj\Debug\AdvancedCalculator.pdb
+C:\Users\Thickpad404\Downloads\Calculator\AdvancedCalculator\obj\Debug\AdvancedCalculator.exe.config
+C:\Users\Thickpad404\Downloads\Calculator\AdvancedCalculator\obj\Debug\AdvancedCalculator.Calculator.resources
+C:\Users\Thickpad404\Downloads\Calculator\AdvancedCalculator\bin\Debug\CalculatorPrivateAssembly.dll
+C:\Users\Thickpad404\Downloads\Calculator\AdvancedCalculator\bin\Debug\CalculatorPrivateAssembly.pdb
+C:\Users\Thickpad404\Downloads\Calculator\AdvancedCalculator\obj\Debug\Advanced.C1CF52A7.Up2Date
