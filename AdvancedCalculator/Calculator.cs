@@ -28,23 +28,31 @@ namespace AdvancedCalculator
         {
             InitializeComponent();
         }
+        private void DisplayResult()
+        {
+            lblDisplay.Text = string.Join("", this.result);
+        }
         private void Num1_EqualsToCurrentNumber()
         {
             string temp = string.Join("", currentNumber);
             this.num1 = float.Parse(temp);
+
             Console.WriteLine("currentNumber: " + string.Join(", ", this.currentNumber));
             Console.WriteLine("num1 operation result: " + this.num1);
-            currentNumber.Clear();
+
+            this.currentNumber.Clear();
             this.isEnteringSecondNumber = true;
         }
+
         private void Num2_EqualsToCurrentNumber()
         {
             string temp = string.Join("", currentNumber);
             this.num2 = float.Parse(temp);
+
             Console.WriteLine("currentNumber: " + string.Join(", ", this.currentNumber));
             Console.WriteLine("num2 operation result: " + this.num2);
-            currentNumber.Clear();
-            
+
+            this.currentNumber.Clear();
         }
 
         private void btnNumber_Click(object sender, EventArgs e)
@@ -52,9 +60,15 @@ namespace AdvancedCalculator
             Button btn = sender as Button;
             if (btn == null) return;
 
-            this.currentNumber.Add(btn.Text);
+            string buttonNumberVALUE = btn.Text;
+
+            //adding value to List
+            this.currentNumber.Add(buttonNumberVALUE);
+
+            //displaying numbers
             lblDisplay.Text = string.Join("", this.currentNumber);
 
+            buttonNumberVALUE = "";
         }
 
         private void btnOperator_Click(object sender, EventArgs e)
@@ -62,8 +76,10 @@ namespace AdvancedCalculator
             Button btn = sender as Button;
             if (btn == null) return;
 
-            currentOperator = btn.Text;
-
+            string oparatorVALUE = btn.Text;
+            this.currentOperator = oparatorVALUE;
+            Console.WriteLine(oparatorVALUE);
+            
             if (!this.isEnteringSecondNumber)
             {
                 Num1_EqualsToCurrentNumber();
@@ -71,9 +87,11 @@ namespace AdvancedCalculator
             else
             {
                 Num2_EqualsToCurrentNumber();
+                Compute();
+                DisplayResult();
             }
-
         }
+
         private void Compute()
         {
             float result = 0;
@@ -86,7 +104,7 @@ namespace AdvancedCalculator
                 case "-":
                     result = BasicComputation.Subtract(this.num1, this.num2);
                     break;
-                case "*":
+                case "x":
                     result = BasicComputation.Multiply(this.num1, this.num2);
                     break;
                 case "÷":
@@ -98,11 +116,18 @@ namespace AdvancedCalculator
             }
 
             this.result = result;
+            DisplayResult();
+            this.num1 = result;
+            //result = 0;
+            
         }
+
         private void btnEquals_Click(object sender, EventArgs e)
         {
+            Num2_EqualsToCurrentNumber();
             Compute();
-            lblDisplay.Text = string.Join("", this.result);
+            DisplayResult();
+            this.isEnteringSecondNumber = false;
         }
 
         private void btnClear_Click(object sender, EventArgs e)
